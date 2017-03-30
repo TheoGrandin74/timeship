@@ -1,0 +1,185 @@
+.horizontal-scroll
+  display: flex
+
+  .slide
+    flex-shrink: 0;
+    width: 100vw;
+    height: 85vh;
+    background-color  #1f1f27
+    display flex
+    flex-direction column
+    justify-content space-between
+
+    .descriptions
+      margin-top 20px
+      margin-left 50px
+      position static
+      z-index 100
+
+      .year-description
+        .title
+          position relative
+
+          .big-year
+            font-size 72px
+            font-family 'Proxima'
+            font-weight 700
+            color rgba(255,255,255,0.2)
+
+          .subtitles
+            font-size 30px
+            font-family 'Proxima'
+            font-weight 700
+            color #EF5B59
+            position absolute
+            bottom 0
+            left 50px
+
+
+
+        .paragraphe
+          display flex
+          justify-content space-between
+
+    p
+      font-family 'Bodoni'
+      font-size 14px
+      color #fff
+      width 300px
+      margin-top 20px
+
+    .important-event
+
+      h3
+        font-family 'Proxima'
+        color $red
+        font-size 18px
+        font-weight 700
+
+    .bg-img
+      position absolute
+      bottom calc(15vh)
+      left calc(25vw)
+      height 500px
+      z-index 0
+      filter opacity(10%)  
+
+    .launch
+      align-self center
+      margin-left 150px
+      margin-bottom 20px
+      position relative
+      z-index 100
+      
+      .img-position
+        position absolute
+        left 80%
+        top 10%
+
+
+    .video
+      width 300px
+      background #bebebe
+      height 169px
+      margin-top 20px
+
+    .context-img
+      width 400px
+      height 250px
+      background #bebebe
+
+
+
+  .dataviz-enter
+    justify-content center
+    align-items center
+    background-image url('../img/flags.png')
+    background-position center
+    p
+      width auto
+      font-family 'Proxima'
+      font-size 44px
+      font-weight 300
+      
+    h2
+      font-family 'Proxima'
+      font-weight 700
+      font-size 120px
+      color #fff
+      
+      span
+        color $red
+        
+    .continue
+      width 40px
+      height 40px
+      border-radius 50px
+      border 1px solid $red
+      display flex
+      justify-content center
+      align-items center
+      margin-top 60px
+      
+      a
+        width 15px
+        height 15px
+        
+        img
+          width 15px
+          height 15px
+          transform rotate(-90deg)
+
+
+.timeline
+  width calc(100vw*5 - 20vw)
+  height 10px
+  background-color #fff
+  position absolute
+  top 35vh
+  left 20vw
+.footer
+  width 100vw
+  height 15vh
+  position fixed
+  bottom 0px
+  left 0px
+  background #1A1A20
+  display flex
+  justify-content center
+  align-items center
+
+  div
+    p
+      font-family 'Proxima'
+      font-weight 700
+      font-size 18px
+      color #fff
+      margin-bottom 10px
+      text-align center
+
+    .anchor
+      width 15px
+      height 15px
+      border-radius 1000px
+      border 1px solid #fff
+      margin 0px 25px
+      cursor pointer
+
+    .beginning, .end
+      width 20px
+      height 20px
+      border 2px solid #fff
+
+    .active
+      background $red
+      border none
+
+    .active-p
+      opacity 1
+      transition opacity 0.2s
+
+    .hidden
+      opacity 0
+      transition opacity 0.2s
+
+
