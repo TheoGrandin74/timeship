@@ -13,6 +13,9 @@
     else if($q == 'dataviz'){
       $page = 'dataviz';
     }
+    else if($q == 'map'){
+      $page = 'map';
+    }
     else
     {
       $page = '404';

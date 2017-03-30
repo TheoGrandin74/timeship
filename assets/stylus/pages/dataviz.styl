@@ -1,0 +1,81 @@
+.container-dataviz
+  width 100vw
+  height 85vh
+  margin-top 15vh
+
+  .canvas
+    margin 50px auto
+    width 60vw
+
+  .legend
+    display flex
+    justify-content center
+    align-items center
+
+    .usa
+      display flex
+      justify-content center
+      align-items center
+
+      .green-past
+        width 15px
+        height 15px
+        background-color $green
+        border-radius 20px
+        margin 0px 10px
+
+    .urss
+      display flex
+      justify-content center
+      align-items center
+      margin-left 100px
+
+      .red-past
+        width 15px
+        height 15px
+        background-color $red
+        border-radius 20px
+        margin 0px 10px
+    p
+      color #fff
+      font-family 'Proxima'
+      font-size 15px
+      font-weight 700
+
+  #map
+    height 72vh
+    width 75vw
+    margin 50px auto
+
+.nav
+  position fixed
+  top 30px
+  left 70px
+
+  div  
+    cursor pointer
+    p
+      color #fff
+      text-transform uppercase
+      font-family 'Proxima Nova'
+      font-weight 700
+      font-size 12px
+      border-top 1px solid $red
+      border-bottom 1px solid $red
+      padding 12px 6px
+      text-align center
+      transition background 0.2s
+
+    .map-a
+      border none
+      background #343441
+      opacity 0
+      transition opacity 0.3s
+
+    &:hover
+      .rocket
+        background $red
+
+      .map-a
+        opacity 1
+
