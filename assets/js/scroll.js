@@ -29,7 +29,6 @@ container.body.addEventListener('mousewheel', (e) => {
     active_timeline_dot(2);
   }
   else if(window.scrollX >= container.width*4 && window.scrollX < container.width*5){
-    console.log('entre');
     active_timeline_dot(3);
   }
   else
@@ -66,7 +65,6 @@ container.body.addEventListener('keydown', () => {
     active_timeline_dot(2);
   }
   else if(window.scrollX >= container.width*4 && window.scrollX < container.width*5){
-    console.log('entre');
     active_timeline_dot(3);
   }
   else

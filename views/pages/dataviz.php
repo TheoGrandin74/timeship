@@ -25,7 +25,7 @@
   </div>
 </div>
 <div class="footer">
-  <p class="desc-form">Visualize the mission you want :</p>
+  <p class="desc-form">Visualize the year you want :</p>
   <form action='mission_report' method="get">
     <select name="mission" id="misson">
       <option value="1961">1961</option>

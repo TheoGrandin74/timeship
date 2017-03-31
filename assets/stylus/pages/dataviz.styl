@@ -11,11 +11,12 @@
     display flex
     justify-content center
     align-items center
-
+    
     .usa
       display flex
       justify-content center
       align-items center
+      cursor pointer
 
       .green-past
         width 15px
@@ -29,6 +30,7 @@
       justify-content center
       align-items center
       margin-left 100px
+      cursor pointer
 
       .red-past
         width 15px
@@ -45,8 +47,22 @@
   #map
     height 72vh
     width 75vw
-    margin 50px auto
-
+    margin 10px auto 30px auto
+    
+  .zoom
+    text-align center
+    margin 10px 0px
+    
+    p
+      color #fff
+      font-family 'Proxima'
+      font-size 13px  
+      font-weight 700
+      
+    .reset
+      color $red
+      cursor pointer
+    
 .nav
   position fixed
   top 30px

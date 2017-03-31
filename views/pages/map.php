@@ -20,22 +20,13 @@
       <p>URSS</p>
     </div>
   </div>
+  <div class="zoom">
+    <p>Click on the legend to zoom on the launches sites</p>
+    <p class="reset">Reset zoom</p>
+  </div>
   <div id="map"></div>
 </div>
 <script src='assets/js/map.js'>
-  function initMap() {
-    var crd = {lat: 30, lng: 10};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 2,
-      center: crd,
-      mapTypeId: google.maps.MapTypeId.SATELLITE,
-      disableDefaultUI: true
-    });
-    var marker = new google.maps.Marker({
-      position: crd,
-      map: map
-    });
-  }
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPTN1G3Y_hvRJYDoN5ZplEIEESulDvqws&callback=initMap"></script>

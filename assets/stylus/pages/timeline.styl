@@ -8,6 +8,7 @@
     display flex
     flex-direction column
     justify-content space-between
+    overflow-y hidden
 
     .descriptions
       margin-top 20px
@@ -54,6 +55,16 @@
         color $red
         font-size 18px
         font-weight 700
+      .see
+        display flex
+        justify-content space-between
+
+        a
+          font-family 'Proxima'
+          font-size 14px
+          font-weight 700
+          color $red
+
 
     .bg-img
       position absolute
@@ -69,7 +80,7 @@
       margin-bottom 20px
       position relative
       z-index 100
-      
+
       .img-position
         position absolute
         left 80%
@@ -78,14 +89,24 @@
 
     .video
       width 300px
-      background #bebebe
       height 169px
       margin-top 20px
+
+      img
+        width 100%
+        height 100%
+
+      video
+        width auto
+        height 100%
 
     .context-img
       width 400px
       height 250px
-      background #bebebe
+
+      img
+        width 100%
+        height auto
 
 
 
@@ -99,16 +120,16 @@
       font-family 'Proxima'
       font-size 44px
       font-weight 300
-      
+
     h2
       font-family 'Proxima'
       font-weight 700
       font-size 120px
       color #fff
-      
+
       span
         color $red
-        
+
     .continue
       width 40px
       height 40px
@@ -118,15 +139,21 @@
       justify-content center
       align-items center
       margin-top 60px
-      
+      cursor pointer
+
       a
         width 15px
         height 15px
-        
+
         img
           width 15px
           height 15px
           transform rotate(-90deg)
+          transition all 0.2s ease
+
+      &:hover
+        img
+          margin-top 2px 
 
 
 .timeline
